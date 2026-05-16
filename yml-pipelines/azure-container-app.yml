@@ -76,7 +76,7 @@ stages:
     - task: AzureCLI@2
       displayName: Deploy Container App (Staging)
       inputs:
-        azureSubscription: 'Azure-ARM-'
+        azureSubscription: 'Azure-ARM-ai-app'
         scriptType: bash
         scriptLocation: inlineScript
         inlineScript: |
@@ -145,7 +145,7 @@ stages:
     - task: AzureCLI@2
       displayName: Deploy Container App (Production)
       inputs:
-        azureSubscription: 'Azure-ARM-'
+        azureSubscription: 'Azure-ARM-ai-app'
         scriptType: bash
         scriptLocation: inlineScript
         inlineScript: |
